@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beautiful Sign Up Form</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="container">
+    <form class="form-box" onsubmit="return validateForm()">
+      <h2>Registration</h2>
+
+      <input type="text" id="name" placeholder="Enter your name" required>
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <input type="password" id="password" placeholder="Create password" required>
+      <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+
+      <label class="checkbox">
+        <input type="checkbox" id="terms" required>
+        I accept all terms & conditions
+      </label>
+
+      <button type="submit">Register Now</button>
+      <p class="login-link">Already have an account? <a href="#">Login now</a></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
